@@ -7,6 +7,7 @@ body{
     background-color: gray;
     margin-left:50px;
     margin-right:50px;
+    height:100vh;
 }
 header{
     background-color: black;
@@ -21,14 +22,10 @@ header span{
 }
 main{
     background-color: black;
-    padding-left: 40px;
-    padding-right: 40px;
 }
 .container{
     display: flex;
     flex-wrap: wrap;
-    height: 150vw;
-    width: 100vw;
 }
 .container figure{
     flex-basis: calc((100%/7)-(100px/7));
