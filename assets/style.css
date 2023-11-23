@@ -3,62 +3,96 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: gray;
-    height:100vh;
-    margin: 30px;
-    margin-left: 30px;
+html{
+    font-family: sans-serif;
 }
-header{
-    background-color: black;
+.web-app{
+    height: 100vh;
 }
-header .menu .icons{
-    display: flex;
-    justify-content: end;
-    gap: 5px;
+.web-app-top .web-app-top-button{
     padding: 10px;
-    align-items: end;
+    display: flex;
+    gap: 10px;
 }
-header .menu .icons svg{
-    width: 25px;
-    fill: white;
-}
-header .menu .icons span{
-    text-align: center;
+.web-app-top .web-app-top-button button{
+    padding: 10px 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background-color: #222222;
+    border: 0;
+    color: white;
+    border-radius: 10px;
     font-size: 20px;
 }
-.menu .icons li{
-    list-style: none;
-    background-color: gray;
-    color: white;
-    border-radius: 5px;
-    
+svg{
+    fill: white;
 }
-.menu .icons li svg{
-    fill: rgb(255, 255, 255);
-    background-color: gray;
-}
- 
-main{
-    height: 100vh;
-    padding: 20px;
-    background-color: black;
-}
-
-.cards{
+.web-app .web-app-top{
     display: flex;
-    flex-wrap: wrap;
-    margin-left: 16px;
+    justify-content: flex-end;
+    background-color: black;
+    height: 60px;
 }
-
-.cards .card figure img{
-    width: 240px;
+img{
     display: block;
-    height: 150px;
+    width: 100%;
+}
+.web-app-center{
+    height: calc(100%-(60px+80px));
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    overflow: auto;
+    gap: 20px;
+    flex-basis: calc((100%/7)-(20px));
+}
+.web-app-center .partecipant{
+    position: relative;
+}
+
+.web-app-center .partecipant .pinco{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(199, 190, 190,0.5);
+    padding: 5px;
+}
+span{
+    color: white;
+}
+.web-app-bottom{
+    height: 80px;
+    padding: 10px;
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.web-app-bottom .icons{
+    display: flex;
+    align-items: center;
+    border: 0;
+    background-color: transparent;
+    height: 100%;
+    color: white;
+}
+.web-app-bottom .icons>div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.web-app-bottom-left{
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    margin-left: 20px;
 
 }
 
-.cards .card{
-    flex-basis: calc((100%/7));
-    margin-bottom: 10px;
+
+.web-app-bottom .icons svg{
+    height: 24px;
 }
