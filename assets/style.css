@@ -96,3 +96,26 @@ span{
 .web-app-bottom .icons svg{
     height: 24px;
 }
+
+.web-app-bottom-center .icons>div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.web-app-bottom-center{
+    height: 100%;
+    display: flex;
+    gap: 20px;
+
+}
+.web-app-bottom-right{
+    padding: 30px;
+    background-color: #4a4a4b;
+}
+.web-app-bottom-right button{
+    border: 0;
+    background-color: transparent;
+    font-size: 20px;
+    color: red;
+}
